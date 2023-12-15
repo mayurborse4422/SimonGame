@@ -1,0 +1,94 @@
+body{
+    text-align: center;
+}
+.black{
+    background-color: black;
+    color: white;
+}
+.white{
+    background-color: white;
+    color: black;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 38px;
+}
+.switch input{
+    opacity: 1;
+    width: 0;
+    height: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ccc;
+    transition: 0.1s;
+}
+.slider::before{
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.1s;
+}
+input:checked + .slider{
+    background-color: #2196F3;
+}
+input:hover + .slider{
+    box-shadow: 0 0 20px #2196F3;
+}
+input:checked + .slider:before{
+    transform: translateX(40px);
+    box-shadow: 0 0 20px white;
+}
+.slider.round{
+    border-radius: 34px;
+}
+.slider.round:before{
+    border-radius: 50%;
+}
+p{
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+.btn{
+    height: 200px;
+    width: 200px;
+    border: 10px solid white;
+    border-radius: 20%;
+    margin: 2.5rem;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.yellow{
+    background-color: #f99b45;
+}
+.red{
+    background-color: #d95980;
+}
+.green{
+    background-color: #63aac0;
+}
+.purple{
+    background-color: #819ff9;
+}
+.flash{
+    background-color: white;
+}
+.userflash{
+    background-color: green;
+}
