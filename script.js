@@ -91,5 +91,5 @@ function reset(){
     gameSeq = [];
     userSeq = [];
     level = 0;
-    p.innerText = `HighScore : ${Math.max(0,highscore)}; 
+    p.innerText = `HighScore : ${Math.max(0,highscore)}`; 
 }
