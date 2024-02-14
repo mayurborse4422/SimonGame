@@ -68,7 +68,7 @@ function checkAns(idx){
 
     }
     else{
-        h2.innerText = `Game Over! Your Score is ${level-1}`;
+        h2.innerText = `Game Over! Your Score is ${Math.max(0,level-1)}`;
         highscore = Math.max(highscore,level-1); 
         h3.innerText = `Press Any Key To Restart`;
         reset();
